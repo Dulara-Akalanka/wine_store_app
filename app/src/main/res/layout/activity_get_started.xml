@@ -6,7 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".getStarted"
-    android:background="@drawable/lgbg">
+    android:background="@drawable/gsbg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="196dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="228dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGetStarted"
@@ -16,7 +24,6 @@
         android:layout_marginEnd="40dp"
         android:backgroundTint="#3F0B0B"
         android:fontFamily="serif"
-
         android:text="@string/getStarted"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
