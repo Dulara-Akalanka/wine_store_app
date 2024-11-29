@@ -25,22 +25,22 @@ public class home extends AppCompatActivity {
         });
     }
 
-    // Move this method outside of onCreate
-    public void onCardClick(View view) {
-        // Get the data to send
-        String productName = view.findViewById(R.id.product_name).getText().toString();
-        String productPrice = "$24.99";
-        int productImage = R.drawable.w1;
-
-        // Create an Intent to navigate to the second activity
-        Intent intent = new Intent(home.this, ItemView.class);
-
-        // Put the data in the Intent
-        intent.putExtra("product_name", productName);
-        intent.putExtra("product_price", productPrice);
-        intent.putExtra("product_image", productImage);
-
-        // Start the second activity
-        startActivity(intent);
-    }
+//    // Move this method outside of onCreate
+//    public void onCardClick(View view) {
+//        // Get the data to send
+//        String productName = view.findViewById(R.id.product_name).getText().toString();
+//        String productPrice = "$24.99";
+//        int productImage = R.drawable.w1;
+//
+//        // Create an Intent to navigate to the second activity
+//        Intent intent = new Intent(home.this, ItemView.class);
+//
+//        // Put the data in the Intent
+//        intent.putExtra("product_name", productName);
+//        intent.putExtra("product_price", productPrice);
+//        intent.putExtra("product_image", productImage);
+//
+//        // Start the second activity
+//        startActivity(intent);
+//    }
 }

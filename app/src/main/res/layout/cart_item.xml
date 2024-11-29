@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2121212"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/ivCartItemImage"
+        android:layout_width="75dp"
+        android:layout_height="102dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/w1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/tvCartItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Wine Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/ivCartItemImage"
+        app:layout_constraintStart_toEndOf="@id/ivCartItemImage"
+        app:layout_constraintEnd_toStartOf="@id/tvCartItemPrice" />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/tvCartItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="$3200"
+        android:textSize="14sp"
+        android:textColor="#B0B0B0"
+        app:layout_constraintTop_toTopOf="@id/tvCartItemName"
+        app:layout_constraintEnd_toStartOf="@id/btnRemoveItem" />
+
+    <!-- Quantity Controls -->
+    <Button
+        android:id="@+id/btnDecreaseQuantity"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#5A1A1A"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvCartItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvCartItemName" />
+
+    <!-- Remove Button -->
+
+    <TextView
+        android:id="@+id/tvCartItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/btnDecreaseQuantity"
+        app:layout_constraintTop_toBottomOf="@id/tvCartItemName" />
+
+    <Button
+        android:id="@+id/btnIncreaseQuantity"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#5A1A1A"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/tvCartItemQuantity"
+        app:layout_constraintTop_toBottomOf="@id/tvCartItemName" />
+
+    <Button
+        android:id="@+id/btnRemoveItem"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#821D1D"
+        android:text="✕"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
