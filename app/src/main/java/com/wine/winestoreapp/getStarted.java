@@ -34,7 +34,7 @@ public class getStarted extends AppCompatActivity {
             }
         });
 
-        int splashScreenDuration = 8000;
+        int splashScreenDuration = 3000;
 
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(getStarted.this, login.class);
