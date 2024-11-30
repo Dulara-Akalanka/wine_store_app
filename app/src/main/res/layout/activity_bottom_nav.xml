@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/bottomNav"
         android:layout_width="406dp"
-        android:layout_height="69dp"
+        android:layout_height="49dp"
         android:background="#1f1f1f"
         android:orientation="horizontal"
         android:padding="8dp"
@@ -19,30 +19,40 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/homeIcon"
-            android:layout_width="105dp"
-            android:layout_height="43dp"
+            android:id="@+id/categoryIcon"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
             android:contentDescription="Home"
-            android:src="@drawable/setting_white_icon"
-            android:tint="#FFFFFF" />
+            android:src="@drawable/category_icon"
+           />
 
         <ImageView
-            android:id="@+id/cartIcon"
-            android:layout_width="105dp"
-            android:layout_height="43dp"
+            android:id="@+id/homeIcon"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
             android:contentDescription="Cart"
-            android:src="@drawable/setting_white_icon"
-            android:tint="#FFFFFF" />
+            android:src="@drawable/home_iocn"
+            />
 
         <ImageView
-            android:id="@+id/profileIcon"
-            android:layout_width="105dp"
-            android:layout_height="43dp"
+            android:id="@+id/settingIcon"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
             android:contentDescription="Profile"
             android:src="@drawable/setting_white_icon"
-            android:tint="#FFFFFF" />
+            />
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:src="@drawable/cart"
+             />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

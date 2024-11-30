@@ -4,12 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#000000"
+    android:background="#141414"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Cart">
 
-    <!-- Header Section -->
 
     <TextView
         android:id="@+id/tvCartTitle"
@@ -24,18 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvCartItemCount"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:text="All Items (0)"-->
-<!--        android:textSize="16sp"-->
-<!--        android:textColor="#B0B0B0"-->
-<!--        app:layout_constraintStart_toEndOf="@id/tvCartTitle"-->
-<!--        app:layout_constraintTop_toTopOf="@id/tvCartTitle" />-->
 
-    <!-- RecyclerView for Cart Items -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCartItems"
         android:layout_width="374dp"
@@ -46,11 +34,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCartTitle" />
 
-    <!-- Footer Section -->
     <LinearLayout
         android:id="@+id/llCartFooter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +59,7 @@
             android:id="@+id/btnCheckout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#821D1D"
+            android:backgroundTint="#d19658"
             android:text="Checkout"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
@@ -83,9 +70,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:backgroundTint="#5A1A1A"
+            android:backgroundTint="#d19658"
             android:text="Clear Cart"
             android:textColor="#FFFFFF"
             android:textSize="14sp" />
     </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_nav_bar"
+        layout="@layout/activity_bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

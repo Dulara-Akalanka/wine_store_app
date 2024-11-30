@@ -2,6 +2,7 @@ package com.wine.winestoreapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,6 +33,14 @@ public class getStarted extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        int splashScreenDuration = 8000;
+
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(getStarted.this, login.class);
+            startActivity(intent);
+            finish();
+        }, splashScreenDuration);
 
     }
 }

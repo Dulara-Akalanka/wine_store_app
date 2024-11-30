@@ -13,7 +13,13 @@
         android:theme="@style/Theme.Wine_store_app"
         tools:targetApi="31">
         <activity
-            android:name=".Setting"
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".HomeCard"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
             android:exported="false" />
         <activity
             android:name=".SingleCategory"
@@ -31,10 +37,7 @@
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".testbn"
-            android:exported="false" />
-        <activity
-            android:name=".getStarted"
+            android:name=".Cart"
             android:exported="false" />
         <activity
             android:name=".register"
@@ -43,7 +46,7 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".Cart"
+            android:name=".getStarted"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -69,23 +69,17 @@
                     android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <!-- Wine Bottle Image with Gradient Background -->
-                    <FrameLayout
-                        android:layout_width="100dp"
-                        android:layout_height="140dp"
-                        android:background="@drawable/image_gradient_background">
+
 
                         <ImageView
                             android:layout_width="87dp"
                             android:layout_height="128dp"
                             app:cardCornerRadius="16dp"
                             android:contentDescription="Wine Bottle"
-                            android:scaleType="centerCrop"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/w1" />
 
-                    </FrameLayout>
 
-                    <!-- Wine Details Section -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -162,7 +156,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
                                 android:padding="10dp"
-                                android:backgroundTint="#821D1D"
+                                android:backgroundTint="#d19658"
                                 android:text="Add to Cart"
                                 android:textColor="#FFFFFF"
                                 android:textSize="14sp"
@@ -222,7 +216,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#821D1D"
+                            android:backgroundTint="#d19658"
                             android:text="Add to Cart"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />
@@ -251,7 +245,7 @@
                         android:layout_height="141dp"
                         android:contentDescription="Wine Bottle"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/w1" />
+                        android:src="@drawable/w2" />
 
                     <!-- Wine Details -->
                     <LinearLayout
@@ -281,7 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#821D1D"
+                            android:backgroundTint="#d19658"
                             android:text="Add to Cart"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />
@@ -309,8 +303,8 @@
                         android:layout_width="82dp"
                         android:layout_height="141dp"
                         android:contentDescription="Wine Bottle"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/w1" />
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/w4" />
 
                     <!-- Wine Details -->
                     <LinearLayout
@@ -340,7 +334,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#821D1D"
+                            android:backgroundTint="#d19658"
                             android:text="Add to Cart"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />
@@ -369,7 +363,7 @@
                         android:layout_height="141dp"
                         android:contentDescription="Wine Bottle"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/w1" />
+                        android:src="@drawable/w3" />
 
                     <!-- Wine Details -->
                     <LinearLayout
@@ -399,7 +393,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:backgroundTint="#821D1D"
+                            android:backgroundTint="#d19658"
                             android:text="Add to Cart"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />

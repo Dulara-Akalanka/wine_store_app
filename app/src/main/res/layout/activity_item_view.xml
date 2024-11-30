@@ -6,25 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ItemView"
-    android:background="@color/black">
+    android:background="#141414">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pId"
+        android:layout_width="113dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="280dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="300dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/white"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:background="#141414"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtname"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="128dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:text="A smooth and elegant Merlot with notes of ripe blackberries, plums, and a hint of vanilla. The medium-bodied profile is complemented by soft tannins and a velvety finish, making it perfect for pairing with roasted meats or enjoying on its own."
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -40,57 +57,66 @@
         android:id="@+id/txtPrice"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/txtNum"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="70dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        android:id="@+id/plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintStart_toEndOf="@+id/txtNum"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/plus" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="56dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        android:id="@+id/minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice"
         app:srcCompat="@drawable/minus" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="66dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/heart_icon" />
 
-
     <Button
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:backgroundTint="#d19658"
         android:text="Add To Cart"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

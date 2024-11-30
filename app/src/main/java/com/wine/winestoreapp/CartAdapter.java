@@ -35,7 +35,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
 
         holder.ivCartItemImage.setImageResource(currentItem.getImageResource());
         holder.tvCartItemName.setText(currentItem.getName());
-        holder.tvCartItemPrice.setText("$" + currentItem.getPrice());
+        holder.tvCartItemPrice.setText("Rs." + currentItem.getPrice());
         holder.tvCartItemQuantity.setText(String.valueOf(currentItem.getQuantity()));
 
         // Decrease Quantity
